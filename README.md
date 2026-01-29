@@ -1,6 +1,20 @@
 # SafePick: Guard-Constrained Robot Escort Policy Evaluation
 
-Analysis framework for warehouse robot escort policies under safety constraints.
+SafePick implements a **guard-constrained evaluation framework** for warehouse 
+human-robot collaboration that:
+
+- Replays **8,535 production warehouse picking waves** under alternative robot 
+  escort policies
+- Enforces **dual safety contracts**:
+  - **Iso-time tolerance (ε)**: Limits schedule drift (0.5-2.0%)
+  - **Protective Separation Distance (PSD)**: Conservative human-robot spacing
+- Compares three policies: **P0** (human-only baseline), **P1** (escort-trail), 
+  **P2** (lead-ahead)
+- Decouples **policy quality** from **deployment eligibility** for transparent, 
+  auditable evaluation
+
+**Dataset:** 8,535 waves (87.9% retention) from footwear warehouse (58×90m, 
+2,292 bins, 3 levels)
 
 ## Quick Start
 ```bash
@@ -31,6 +45,6 @@ Download from: https://doi.org/10.17632/pf2w725pw3.1
 
 ## Contact
 - PI: Wei Qin (wqin@sjtu.edu.cn)
-- Institution: Shanghai Jiao Tong University
+- Institution: Shanghai Jiao Tong University, China
 
-Generated: 2026-01-29
+
